@@ -1,0 +1,24 @@
+{
+  "name": "daftar-kerjaan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "daftar_kerjaan.js",
+  "dependencies": {
+    "jsonfile": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codago/daftar-kerjaan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codago/daftar-kerjaan/issues"
+  },
+  "homepage": "https://github.com/codago/daftar-kerjaan#readme"
+}
