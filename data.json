@@ -1,0 +1,27 @@
+[
+   {
+      "task": "makan dulu deh",
+      "status": false,
+      "tags": [
+         "makan",
+         "dulu",
+         "minum",
+         "bisa"
+      ]
+   },
+   {
+      "task": "belajar coding penting",
+      "status": false,
+      "tags": [
+         "coding",
+         "penting"
+      ]
+   },
+   {
+      "task": "belajar coding mudah",
+      "status": false,
+      "tags": [
+         "coding"
+      ]
+   }
+]
