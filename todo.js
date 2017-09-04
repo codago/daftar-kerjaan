@@ -134,11 +134,13 @@ switch (params[2]) {
   tag(param,params.slice(4, params.length))
   break;
 
-  default:
+  case 'filter':
   let paramFilters = params[2].split(':')
-  if(paramFilters[0] == 'filter'){
-    filter(paramFilters[1])
-  } else {
+  if(paramFilters[0] == 'filter')
+      filter(paramFilters[1])
+  break;
+    
+  default:
     console.log('>>>JS TODO<<<');
     console.log('node todo.js list');
     console.log('node todo.js task <task_id>');
@@ -150,6 +152,5 @@ switch (params[2]) {
     console.log('node todo.js list:completed asc|desc');
     console.log('node todo.js tag <task_id> <task_name_2> <task_name_3> ... <task_name_N>');
     console.log('node todo.js filter : <tag_name>');
-  }
   break;
 }
