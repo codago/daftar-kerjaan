@@ -23,5 +23,22 @@
       "tags": [
          "coding"
       ]
+   },
+   {
+      "task": "makan",
+      "status": false,
+      "tags": []
+   },
+   {
+      "task": "beli makan",
+      "status": false,
+      "tags": [
+         "beli"
+      ]
+   },
+   {
+      "task": "beli makan",
+      "status": false,
+      "tags": []
    }
 ]

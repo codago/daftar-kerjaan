@@ -26,6 +26,10 @@ let param = null;
 let item = null;
 switch (inputData[2]) {
 
+  case undefined:
+  hint();
+  break;
+
   case "add":
   param = inputData.slice(3, inputData.length)
   dataJson.push({task: param.join(' '), status: false, tags: []});
@@ -109,7 +113,7 @@ switch (inputData[2]) {
   break;
 
   default:
-  param = inputData[2].split(':')
+  param = inputData[2].split(':');
   if (param[0] == "filter"){
     console.log(`Daftar Pekerjaan difilter oleh: ${param[1]}`);
     for (let i=0; i < dataJson.length; i++) {
