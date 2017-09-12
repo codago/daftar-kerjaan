@@ -1,0 +1,18 @@
+[
+   {
+      "id": 1,
+      "array": "[ ]",
+      "content": " saya mau ke pasar ",
+      "tag_name": "barang"
+   },
+   {
+      "id": 2,
+      "array": "[X]",
+      "content": " saya mau makan "
+   },
+   {
+      "id": 3,
+      "array": "[ ]",
+      "content": " saya mau minum "
+   }
+]
