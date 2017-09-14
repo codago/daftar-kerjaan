@@ -93,6 +93,19 @@ function filter(n){
   }
 }
 
+function inputankosong() {
+  console.log('>>>JS TODO<<<');
+  console.log('node todo.js list');
+  console.log('node todo.js task <task_id>');
+  console.log('node todo.js add <task_content>')
+  console.log('node todo.js delete <task_id>');
+  console.log('node todo.js complete <task_id>');
+  console.log('node todo.js uncomplete <task_id>');
+  console.log('node todo.js list:outstanding asc|desc');
+  console.log('node todo.js list:completed asc|desc');
+  console.log('node todo.js tag <task_id> <task_name_2> <task_name_3> ... <task_name_N>');
+  console.log('node todo.js filter : <tag_name>');
+}
 
 let param = 0;
 switch (params[2]) {
@@ -134,23 +147,20 @@ switch (params[2]) {
   tag(param,params.slice(4, params.length))
   break;
 
-  case 'filter':
+  case undefined:
+   inputankosong();
+    break;
+
+  // case 'filter':
+  //   let paramFilters = params[2].split(':')
+  //   if(paramFilters[0] == 'filter')
+  //   console.log(paramFilters[0]);
+  //     filter(paramFilters[1])
+
+  break;
+  default:
   let paramFilters = params[2].split(':')
   if(paramFilters[0] == 'filter')
-      filter(paramFilters[1])
-  break;
-    
-  default:
-    console.log('>>>JS TODO<<<');
-    console.log('node todo.js list');
-    console.log('node todo.js task <task_id>');
-    console.log('node todo.js add <task_content>')
-    console.log('node todo.js delete <task_id>');
-    console.log('node todo.js complete <task_id>');
-    console.log('node todo.js uncomplete <task_id>');
-    console.log('node todo.js list:outstanding asc|desc');
-    console.log('node todo.js list:completed asc|desc');
-    console.log('node todo.js tag <task_id> <task_name_2> <task_name_3> ... <task_name_N>');
-    console.log('node todo.js filter : <tag_name>');
+    filter(paramFilters[1])
   break;
 }
