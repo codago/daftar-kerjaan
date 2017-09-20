@@ -82,7 +82,7 @@ var todoListApp = {
           }
       }
     } else if(orderingArgument.toLowerCase() === "desc") {
-      for(var y = todoList.length-1; y>0; y--) {
+      for(var y = todoList.length-1; y>=0; y--) {
         if(todoList[y].todoCompleted === false) {
             console.log((y+1) + ". [ ] " + todoList[y].todo);
           }
@@ -100,7 +100,7 @@ var todoListApp = {
           }
       }
     } else if(orderingArgument.toLowerCase() === "desc") {
-      for(var y = todoList.length-1; y>-1; y--) {
+      for(var y = todoList.length-1; y>= 0; y--) {
         if(todoList[y].todoCompleted === true) {
             console.log((y+1) + ". [X] " + todoList[y].todo);
           }
